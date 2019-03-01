@@ -1,9 +1,8 @@
 val xs = List(1, 2, 3, 4)
 
+// Scala function syntax
+val add1 = (i: Int) => i + 1         // implicit return type
+val add2: Int => Int = i => i + 1    // explicit return type
 
-val even1: Int => Boolean = i => i % 2 == 0
-
-def even2(i: Int) = i % 2 == 0
-
-xs.filter(even2)
+xs.map(add1)
 
