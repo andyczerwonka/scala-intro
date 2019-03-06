@@ -11,4 +11,6 @@ object CallByValue {
     x
   }
 
+  def testTimer[T]: T => T = time("Running the test")(_)
+
 }
