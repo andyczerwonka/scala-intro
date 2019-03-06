@@ -14,10 +14,10 @@ class LoopSpec extends FunSuite with Matchers {
     recursiveSum(xs) shouldBe 10
   }
 
-  test("recursive sum blow stack") {
+  test("recursive sum blows the stack") {
     assertThrows[StackOverflowError] {
       val xs = 1 to 100000
-      recursiveSum(xs.toList) shouldBe 705082704
+      recursiveSum(xs.toList)
     }
   }
 
